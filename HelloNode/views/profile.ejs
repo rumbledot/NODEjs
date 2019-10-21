@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <style>
+        body {
+            background: skyblue;
+            font-family: Verdana;
+            color: #ffffff;
+            padding: 30px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        ul {
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>PROFILE PAGE</h3>
+    <h1>
+        <%= person %>
+    </h1>
+    <p>this is a profile page</p>
+    <p>
+        <%= data.age %>
+    </p>
+    <p>
+        <%= data.job %>
+    </p>
+    <h3>Hobbies</h3>
+    <ul>
+        <% data.hobby.forEach(function(item){%>
+
+            <li>
+                <%= item %>
+            </li>
+
+            <% }); %>
+
+    </ul>
+</body>
+
+</html>
