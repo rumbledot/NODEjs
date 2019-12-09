@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "models",
+			"path": "C:\\Users\\Abram\\Desktop\\models"
+		},
+		{
+			"name": "facedetector",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "facedetector"
+	}
+}
